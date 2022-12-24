@@ -24,7 +24,7 @@ public class Main {
 
         //Транспортные средства, участвующие в гонках
 
-        Car car1 = new Car("Форд", "Фокус", 1.6, driver1);
+        Car car1 = new Car("Форд", "Фокус", 1.7, driver1);
         Car car2 = new Car("Форд", "Мустанг", 2.6, driver2);
         Car car3 = new Car("Ауди", "A8", 1.6, driver3);
         Car car4 = new Car("Лада", "Калина", 3.4, driver4);
