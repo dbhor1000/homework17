@@ -1,8 +1,8 @@
-public class Bus<T extends DriverCategoryD> extends Transport implements Transport.Competitor, Transport.DriverAndCarInformation {
+public class Bus extends Transport implements Transport.Competitor, Transport.DriverAndCarInformation {
 
     DriverCategoryD driver;
 
-    public Bus(String model, String subModel, double engineSize, T driver) {
+    public <T extends DriverCategoryD> Bus(String model, String subModel, double engineSize, T driver) {
 
         super(model, subModel, engineSize);
         this.driver = driver;

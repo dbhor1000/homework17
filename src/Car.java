@@ -1,11 +1,11 @@
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 
-public class Car<T extends DriverCategoryB> extends Transport implements Transport.Competitor, Transport.DriverAndCarInformation {
+public class Car extends Transport implements Transport.Competitor, Transport.DriverAndCarInformation {
 
     DriverCategoryB driver;
 
-    public Car(String model, String subModel, double engineSize, T driver) {
+    public <T extends DriverCategoryB> Car(String model, String subModel, double engineSize, T driver) {
 
         super(model, subModel, engineSize);
         this.driver = driver;
